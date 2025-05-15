@@ -17,7 +17,7 @@ Other requirements include (version tested on):
 
 ### UltraViolet Setup
 
-- Set up Ultraviolet as per instructions in https://github.com/dream-lab/UltraViolet/blob/master/README.md.
+- Set up Ultraviolet as per instructions in https://github.com/dream-lab/UltraViolet/blob/master/README.md.You could do either automatic installation or manual installation from Step 1-6. Once it's installed, please follow the steps below: 
 - Create three new terminal windows: one each for the frontend server, controller and worker
   - In the first terminal window, start the frontend server.
   ```
