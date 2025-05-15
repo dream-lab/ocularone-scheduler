@@ -95,7 +95,7 @@ cd <path to ocularone scheduler>
 sudo mvn clean compile assembly:single
 ```
 
-- ```<Path to Your UltraViolet directory>/ocularone-test-pipeline/deploy_nwvar_*.py``` are the deployment files. Modify paths in these to point to your ocularone scheduler directory.
+- ```<Path to Your UltraViolet directory>/ocularone-test-pipeline/deploy_nwvar_*.py``` are the deployment files. Modify paths in these files to point to your home directory in the docker volumes.
 - Ensure that the set paths in ```<Path to Your UltraViolet directory>/ocularone-test-pipeline/deploy_nwvar_og.py``` point to the dataset in ```<path to ocularone scheduler>/video_dataset```.
 - These will be mounted on the edge containers during experiments. 
 
