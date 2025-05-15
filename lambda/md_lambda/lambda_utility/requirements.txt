@@ -1,0 +1,13 @@
+wheel 
+numpy 
+scipy 
+pandas 
+matplotlib 
+seaborn 
+requests
+traitlets 
+tqdm 
+scikit-learn 
+PyYAML 
+pycocotools 
+opencv-python

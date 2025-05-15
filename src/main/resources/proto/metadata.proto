@@ -1,0 +1,52 @@
+syntax = "proto3";
+package org.dreamlab.gRPCHandler;
+option java_multiple_files = true;
+
+message Ack{
+  string message = 1;
+  string task_id = 2;
+  string batch_id = 3;
+  string result = 4;
+}
+
+message BatchMetadata{
+  string drone_id = 1;
+  string batch_id = 2;
+  int64 start_time = 3;
+  int64 end_time = 4;
+  int32 batch_size = 5;
+  int32 batch_duration = 6;
+  string file_path = 7;
+  bool is_dummy_data=8;
+}
+
+message JobDetails{
+  string batch_id = 1;
+  bytes frame = 2;
+  bool is_cloud_exec=3;
+  string task_id=4;
+  string dnn_model=5;
+  string file_path=6;
+}
+
+message OutputDetails{
+  string task_id=1;
+  string dnn_model=2;
+  string result=3;
+}
+
+message Empty{
+
+}
+
+service JavaConn{
+  rpc NewBatch(BatchMetadata) returns (Ack){}
+}
+
+service Inferencer{
+  rpc Submit(JobDetails) returns(Ack){}
+}
+
+service PostInferencer{
+  rpc Submit(OutputDetails) returns(Empty){}
+}

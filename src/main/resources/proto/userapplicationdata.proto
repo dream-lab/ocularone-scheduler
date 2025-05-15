@@ -1,0 +1,22 @@
+syntax = "proto3";
+package org.dreamlab.ApplicationDetails.GrpcGeneratedFiles;
+option java_multiple_files = true;
+
+message Ack{
+  string message = 1;
+}
+
+message UserApplicationInput {
+  string UserId = 1;
+  enum UserMode {
+    WALKING = 0;
+    RUNNING = 1;
+    COVID_ADVISORY = 2;
+    POSE_ESTIMATION = 3;
+  }
+  repeated UserMode userMode = 2;
+  string drone_id=3;
+}
+service UserApplication{
+  rpc addUserInput(UserApplicationInput) returns(Ack){}
+}

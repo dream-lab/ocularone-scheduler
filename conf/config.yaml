@@ -1,0 +1,14 @@
+batch_config:
+  frames_per_batch: 5
+  #batch_length in seconds
+  batch_length: 1
+stream_details:
+  drone1:
+    drone_id: 1
+    video_path: 'keyframes_extraction/video1.mp4'
+utility_details:
+  ffprobe_path: '/usr/bin/ffprobe'
+ramdrive_config:
+  mount_path: '/tmp/ramdrive'
+#  size in mb
+  size: '500'
