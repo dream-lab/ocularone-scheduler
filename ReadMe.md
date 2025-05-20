@@ -175,22 +175,6 @@ python3 deploy_nwvar_bw_var.py <Algo_number > <load>
 ### Check Logs
 - The logs are written to the locations specified in the ```<Your UltraViolet directory>/ocularone-test-pipeline\deploy_nwvar_*.py``` file being used for the experiment. The primary run logs to track the experiment for each edge are present in ```<path to log directory>/algo_<Algo_number>_load_<load>/Edge_<edgeid>/Edge<edgeid>_algo_<Algo_number>_load_<load>_java_client.log```.
 
-## If you are using this work, please cite using the following Bibtex!
-Suman Raj, Radhika Mittal, Harshil Gupta, Yogesh Simmhan, "Adaptive heuristics for scheduling DNN inferencing on edge and cloud for personalized UAV fleets", Future Generation Computer Systems, 2025, https://doi.org/10.1016/j.future.2025.107874.
-(https://www.sciencedirect.com/science/article/pii/S0167739X25001694)
-
-@article{RAJ2025107874,
-title = {Adaptive heuristics for scheduling DNN inferencing on edge and cloud for personalized UAV fleets},
-journal = {Future Generation Computer Systems},
-pages = {107874},
-year = {2025},
-issn = {0167-739X},
-doi = {https://doi.org/10.1016/j.future.2025.107874},
-url = {https://www.sciencedirect.com/science/article/pii/S0167739X25001694},
-author = {Suman Raj and Radhika Mittal and Harshil Gupta and Yogesh Simmhan},
-keywords = {Edge and cloud computing, Unmanned aerial vehicles, Intelligent offloading, Deadline-aware scheduling, DNN inferencing}
-}
-
 ---
 ---
 ## References for External DNN models
