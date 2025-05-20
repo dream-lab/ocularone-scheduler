@@ -1,7 +1,28 @@
-# Ocularone
+# Ocularone Scheduler
+Ocularone Scheduler offers heuristics for scheduling of inferencing tasks over real-time drone videos for helping navigate Visually Impaired Persons (VIPs). It's real-time deadline-aware schedulier operates across edge accelerators and cloud. The heuristic algorithms try to maximize the Quality of Service (QoS) and Quality of Experience (QoE). These algorithms are validated using a containerized emulation-based testbed based upon [UltraViolet](https://github.com/dream-lab/UltraViolet). We also perform practical validation of these scheduling strategies on real hardware using edge accelerators and DJI Tello nano-drones and compare them against state-of-the-art baselines.
 
-The ocularone scheduler has been tested and run on a multi-edge network emulation environment provided by DREAM:Lab's UltraViolet Platform (https://github.com/dream-lab/UltraViolet).
 
+# Attribution
+**If you use the Occularone Scheduler, please cite our work!**
+
+"Adaptive Heuristics for Scheduling DNN Inferencing on Edge and Cloud for Personalized UAV Fleets", Suman Raj and Radhika Mittal and Harshil Gupta and Yogesh Simmhan, *Future Generation Computer Systems*, 2025, [10.1016/j.future.2025.107874](https://doi.org/10.1016/j.future.2025.107874).
+
+```
+@article{RAJ2025107874,
+  title = {Adaptive heuristics for scheduling DNN inferencing on edge and cloud for personalized UAV fleets},
+  journal = {Future Generation Computer Systems},
+  pages = {107874},
+  year = {2025},
+  issn = {0167-739X},
+  doi = {https://doi.org/10.1016/j.future.2025.107874},
+  url = {https://www.sciencedirect.com/science/article/pii/S0167739X25001694},
+  author = {Suman Raj and Radhika Mittal and Harshil Gupta and Yogesh Simmhan},
+  keywords = {Edge and cloud computing, Unmanned aerial vehicles, Intelligent offloading, Deadline-aware scheduling, DNN inferencing}
+}
+```
+
+---
+---
 ## System Requirements
 
 To run experiments, you would need a machine with atleast 30 vCPUs, as each edge emulation container gets pinned to CPU cores. We use a host machine with an ``` Intel Xeon 6208U CPU@2.9 GHz with 30 vCPUs and 128 GB RAM, running Ubuntu v18.04```.  
@@ -12,7 +33,11 @@ Other requirements include (version tested on):
 - Python 3.6.9
 - tmux (to help with terminal and session management)
 <!-- ultraviolet dependencies () -->
+- [UltraViolet](https://github.com/dream-lab/UltraViolet)
+  
 
+---
+---
 ## Environment Setup 
 
 ### UltraViolet Setup
@@ -100,6 +125,8 @@ sudo mvn clean compile assembly:single
 - These will be mounted on the edge containers during experiments. 
 
 
+---
+---
 ## Running Experiments
 - Open a new terminal window. To run an experiment with, say 2 drones per edge, run
 ```
@@ -164,7 +191,16 @@ author = {Suman Raj and Radhika Mittal and Harshil Gupta and Yogesh Simmhan},
 keywords = {Edge and cloud computing, Unmanned aerial vehicles, Intelligent offloading, Deadline-aware scheduling, DNN inferencing}
 }
 
-## References for the DNN models
+---
+---
+## References for External DNN models
 BODY_POSE_ESTIMATION - https://github.com/NVIDIA-AI-IOT/trt_pose  
 CROWD_DENSITY - https://docs.ultralytics.com/models/yolov8/  
-MASK_DETECTION - https://github.com/AIZOOTech/FaceMaskDetection  
+MASK_DETECTION - https://github.com/AIZOOTech/FaceMaskDetection
+
+# CREDITS
+- Suman Saj, PhD Candidate, IISc (sumanraj@iisc.ac.in)
+- [Yogesh Simmhan](https://cds.iisc.ac.in/faculty/simmhan/), IISc (simmhan@iisc.ac.in)
+
+
+Copyright 2005 DREAM:Lab, Indian Institute of Science
