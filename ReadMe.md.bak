@@ -3,7 +3,7 @@ Ocularone Scheduler offers heuristics for scheduling of inferencing tasks over r
 
 
 # Attribution
-**If you use the Ocularone Scheduler, please cite our work!**
+**If you use the Occularone Scheduler, please cite our work!**
 
 "Adaptive Heuristics for Scheduling DNN Inferencing on Edge and Cloud for Personalized UAV Fleets", Suman Raj and Radhika Mittal and Harshil Gupta and Yogesh Simmhan, *Future Generation Computer Systems*, 2025, [10.1016/j.future.2025.107874](https://doi.org/10.1016/j.future.2025.107874).
 
