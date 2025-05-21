@@ -183,7 +183,7 @@ CROWD_DENSITY - https://docs.ultralytics.com/models/yolov8/
 MASK_DETECTION - https://github.com/AIZOOTech/FaceMaskDetection
 
 # CREDITS
-- Suman Saj, PhD Candidate, IISc (sumanraj@iisc.ac.in)
+- Suman Raj, PhD Candidate, IISc (sumanraj@iisc.ac.in)
 - [Yogesh Simmhan](https://cds.iisc.ac.in/faculty/simmhan/), IISc (simmhan@iisc.ac.in)
 
 
